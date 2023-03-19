@@ -1,6 +1,6 @@
 FROM node
 WORKDIR /app
-COPY . .
+COPY . /app
 RUN npm install
-EXPOSE 9981
-CMD ["node" ,"app.js"]
+EXPOSE 3000
+CMD ["node" ,"index.js"]
